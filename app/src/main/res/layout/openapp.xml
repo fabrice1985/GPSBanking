@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="4"
+        android:columnCount="2"
+        android:background="#000000">
+
+
+        <Button
+            android:id="@+id/btnconsulter"
+            android:text="@string/consulter"
+            android:textStyle="italic"
+            android:textColor="#F5ECE8"
+            android:layout_height="250dp"
+            android:layout_width="190dp"
+            android:backgroundTint="#613C6B"
+            android:layout_marginLeft="4px"/>
+        <Button
+            android:id="@+id/btnrecherchesimple"
+            android:text="@string/recherche_simple"
+            android:textStyle="italic"
+            android:textColor="#F5ECE8"
+            android:layout_height="250dp"
+            android:layout_width="190dp"
+            android:backgroundTint="#18765B"/>
+        <Button
+            android:id="@+id/btnrecherchegeo"
+            android:text="@string/recherche_geo"
+            android:textStyle="italic"
+            android:textColor="#F5ECE8"
+            android:layout_height="250dp"
+            android:layout_width="190dp"
+            android:backgroundTint="#A96312"
+            android:layout_marginLeft="4px"/>
+        <Button
+            android:id="@+id/btnapropos"
+            android:text="A PROPOS D'AFRILAND FIRST BANK"
+            android:textStyle="italic"
+            android:textColor="#F5ECE8"
+            android:layout_height="250dp"
+            android:layout_width="190dp"
+            android:backgroundTint="#A69A16"
+            android:layout_marginLeft="4px"/>
+
+    </GridLayout>
+
+
+</LinearLayout>

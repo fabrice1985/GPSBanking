@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bnfg.gpsbanking">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <receiver android:name=".ConnectionChangesReceiver" >
+        <intent-filter >
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Consultation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Efirst">
+
+        </activity>
+        <activity android:name=".Mobile_money">
+
+        </activity>
+        <activity android:name=".Flash_transfer">
+
+        </activity>
+        <activity android:name=".Comptes">
+
+        </activity>
+        <activity android:name=".Tpe">
+
+        </activity>
+        <activity android:name=".Gab">
+
+        </activity>
+        <activity android:name=".Carte_Bancaire">
+
+        </activity>
+        <activity android:name=".Money_Gram">
+
+        </activity>
+        <activity android:name=".Small_World">
+
+        </activity>
+        <activity android:name=".Sms_First">
+
+        </activity>
+        <activity android:name=".Mac">
+
+        </activity>
+        <activity android:name=".RechercheSimple">
+
+        </activity>
+
+        <activity android:name=".Regions">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Ville_Littoral">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Agence_Douala">
+
+        </activity>
+        <activity android:name=".Agence_Limbe">
+
+        </activity>
+        <activity android:name=".Agence_Nkongsamba">
+
+        </activity>
+        <activity android:name=".Agence_Kumba">
+
+        </activity>
+        <activity android:name=".Gab_Douala">
+
+        </activity>
+        <activity android:name=".Tpe_Douala">
+
+        </activity>
+        <activity android:name=".Flash_Trans_Douala">
+
+        </activity>
+        <activity android:name=".NoData">
+
+        </activity>
+        <activity android:name=".TypeRecherche">
+
+        </activity>
+        <activity android:name=".PermissionGps">
+
+        </activity>
+        
+    </application>
+
+</manifest>

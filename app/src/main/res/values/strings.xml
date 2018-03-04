@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">GPS Banking</string>
+    <string name="cartes"> CARTES BANCAIRES </string>
+    <string name="recherche_simple"> RECHERCHE SIMPLE </string>
+    <string name="recherche_geo"> RECHERCHE PAR GEOLOCALISATION </string>
+    <string name="consulter">   CONSULTER OFFRES </string>
+    <string name="gab"> DISTRIBUTEURS </string>
+    <string name="tpe"> TPE</string>
+    <string name="comptes"> COMPTES </string>
+    <string name="flash"> FLASH TRANSFER </string>
+    <string name="money"> MOBILE MONEY </string>
+    <string name="efirst"> E-FIRST </string>
+    <string name="money_gram"> MONEY GRAM </string>
+    <string name="small_world"> SMALL WORLD </string>
+    <string name="smsfirst"> SMS-FIRST </string>
+    <string name="mac"> MAC </string>
+    <string name="agences"> AGENCES </string>
+
+    <string name="choice_search"> Selectionnez une offre </string>
+    <string name="adamaoua"> ADAMAOUA </string>
+    <string name="centre"> CENTRE </string>
+    <string name="est"> EST </string>
+    <string name="extreme_nord"> EXTREME-NORD </string>
+    <string name="littoral"> LITTORAL </string>
+    <string name="nord"> NORD </string>
+    <string name="nord_ouest"> NORD-OUEST </string>
+    <string name="ouest"> OUEST </string>
+    <string name="sud"> SUD </string>
+    <string name="sud_ouest"> SUD-OUEST </string>
+    <string name="douala"> DOUALA </string>
+    <string name="limbe"> LIMBE </string>
+    <string name="nkongsamba"> NKONGSAMBA </string>
+    <string name="kumba"> KUMBA </string>
+</resources>

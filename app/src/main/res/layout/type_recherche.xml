@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choisissez votre mode de recherche"
+        android:textSize="50px"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textAppearance="@style/ThemeOverlay.AppCompat.Dark"
+        />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:columnCount="1"
+        >
+        <Button
+            android:id="@+id/btnrecherche_par_carte"
+            android:text="RECHERCHE PAR CARTE"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            android:textColor="#F5ECE8"
+            android:layout_height="220dp"
+            android:layout_width="match_parent"
+            android:backgroundTint="#195B58"
+            android:layout_marginLeft="4px"/>
+        <Button
+            android:id="@+id/btnrecherche_par_liste"
+            android:text="RECHERCHE PAR LISTE"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:textColor="#F5ECE8"
+            android:layout_height="220dp"
+            android:layout_width="match_parent"
+            android:backgroundTint="#19265B"
+            android:layout_marginLeft="4px"/>
+
+    </GridLayout>
+
+</LinearLayout>

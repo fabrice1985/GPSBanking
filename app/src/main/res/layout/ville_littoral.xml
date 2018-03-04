@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selectionnez une ville"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="4"
+        android:columnCount="2"
+        android:background="#000000">
+
+
+        <Button
+            android:id="@+id/btndouala"
+            android:text="@string/douala"
+            android:textSize="22dp"
+            android:textStyle="italic"
+            android:textColor="#F5ECE8"
+            android:layout_height="250dp"
+            android:layout_width="190dp"
+            android:backgroundTint="#613C6B"
+            android:layout_marginLeft="4px"/>
+        <Button
+            android:id="@+id/btnlimbe"
+            android:text="@string/limbe"
+            android:textSize="22dp"
+            android:textStyle="italic"
+            android:textColor="#F5ECE8"
+            android:layout_height="250dp"
+            android:layout_width="190dp"
+            android:backgroundTint="#18765B"/>
+        <Button
+            android:id="@+id/btnnkongsamba"
+            android:text="@string/nkongsamba"
+            android:textSize="22dp"
+            android:textStyle="italic"
+            android:textColor="#F5ECE8"
+            android:layout_height="250dp"
+            android:layout_width="190dp"
+            android:backgroundTint="#A96312"
+            android:layout_marginLeft="4px"/>
+        <Button
+            android:id="@+id/btnkumba"
+            android:text="@string/kumba"
+            android:textSize="22dp"
+            android:textStyle="italic"
+            android:textColor="#F5ECE8"
+            android:layout_height="250dp"
+            android:layout_width="190dp"
+            android:backgroundTint="#A69A16"
+            android:layout_marginLeft="4px"/>
+
+    </GridLayout>
+
+</LinearLayout>
