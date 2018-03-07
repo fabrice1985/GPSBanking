@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.bnfg.gps.MapsActivity;
+
 
 /**
  * Created by BNFG on 02/09/2017.
@@ -39,7 +39,7 @@ public class PermissionGps extends AppCompatActivity {
     private void showGpsOptions() {
         //startActivity(new Intent("android.settings.LOCATION_SOURCE_SETTINGS"));
         MapsActivity map = new MapsActivity();
-        Intent intent1 = new Intent(PermissionGps.this, MapsActivity.class);
+        Intent intent1 = new Intent(PermissionGps.this, MapsActivityCurrentPlace.class);
         startActivity(intent1);
         finish();
     }

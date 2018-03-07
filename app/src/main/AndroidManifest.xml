@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bnfg.gpsbanking">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <receiver android:name=".ConnectionChangesReceiver" >
-        <intent-filter >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <receiver android:name=".ConnectionChangesReceiver">
+        <intent-filter>
             <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
         </intent-filter>
     </receiver>
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -28,92 +36,68 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Efirst">
-
-        </activity>
-        <activity android:name=".Mobile_money">
-
-        </activity>
-        <activity android:name=".Flash_transfer">
-
-        </activity>
-        <activity android:name=".Comptes">
-
-        </activity>
-        <activity android:name=".Tpe">
-
-        </activity>
-        <activity android:name=".Gab">
-
-        </activity>
-        <activity android:name=".Carte_Bancaire">
-
-        </activity>
-        <activity android:name=".Money_Gram">
-
-        </activity>
-        <activity android:name=".Small_World">
-
-        </activity>
-        <activity android:name=".Sms_First">
-
-        </activity>
-        <activity android:name=".Mac">
-
-        </activity>
-        <activity android:name=".RechercheSimple">
-
-        </activity>
-
+        <activity android:name=".Efirst"></activity>
+        <activity android:name=".Mobile_money"></activity>
+        <activity android:name=".Flash_transfer"></activity>
+        <activity android:name=".Comptes"></activity>
+        <activity android:name=".Tpe"></activity>
+        <activity android:name=".Gab"></activity>
+        <activity android:name=".Carte_Bancaire"></activity>
+        <activity android:name=".Money_Gram"></activity>
+        <activity android:name=".Small_World"></activity>
+        <activity android:name=".Sms_First"></activity>
+        <activity android:name=".Mac"></activity>
+        <activity android:name=".RechercheSimple"></activity>
         <activity android:name=".Regions">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".Ville_Littoral">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Agence_Douala">
+        <activity android:name=".Agence_Douala"></activity>
+        <activity android:name=".Agence_Limbe"></activity>
+        <activity android:name=".Agence_Nkongsamba"></activity>
+        <activity android:name=".Agence_Kumba"></activity>
+        <activity android:name=".Gab_Douala"></activity>
+        <activity android:name=".Tpe_Douala"></activity>
+        <activity android:name=".Flash_Trans_Douala"></activity>
+        <activity android:name=".NoData"></activity>
+        <activity android:name=".TypeRecherche"></activity>
+        <activity android:name=".PermissionGps"></activity>
 
-        </activity>
-        <activity android:name=".Agence_Limbe">
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
 
-        </activity>
-        <activity android:name=".Agence_Nkongsamba">
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
 
-        </activity>
-        <activity android:name=".Agence_Kumba">
-
-        </activity>
-        <activity android:name=".Gab_Douala">
-
-        </activity>
-        <activity android:name=".Tpe_Douala">
-
-        </activity>
-        <activity android:name=".Flash_Trans_Douala">
-
-        </activity>
-        <activity android:name=".NoData">
-
-        </activity>
-        <activity android:name=".TypeRecherche">
-
-        </activity>
-        <activity android:name=".PermissionGps">
-
-        </activity>
-        
+        <activity
+            android:name=".MapsActivityCurrentPlace"
+            android:label="@string/title_activity_maps"></activity>
     </application>
 
 </manifest>
