@@ -1,1 +1,1 @@
-include ':app', 'gps'
+include ':app'
