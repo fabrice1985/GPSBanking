@@ -38,7 +38,7 @@ public class PermissionGps extends AppCompatActivity {
 
     private void showGpsOptions() {
         //startActivity(new Intent("android.settings.LOCATION_SOURCE_SETTINGS"));
-        MapsActivity map = new MapsActivity();
+        //MapsActivity map = new MapsActivity();
         Intent intent1 = new Intent(PermissionGps.this, MapsActivityCurrentPlace.class);
         startActivity(intent1);
         finish();
