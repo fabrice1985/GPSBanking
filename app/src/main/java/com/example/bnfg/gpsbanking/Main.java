@@ -22,10 +22,10 @@ public class Main extends AppCompatActivity {
         mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // if(view==mButton) {
-                    Intent intent = new Intent(Main.this, Consultation.class);
-                    startActivity(intent);
-               // }
+                // if(view==mButton) {
+                Intent intent = new Intent(Main.this, Consultation.class);
+                startActivity(intent);
+                // }
             }
         });
 
@@ -57,7 +57,8 @@ public class Main extends AppCompatActivity {
                 }
             }});
 
-}}
+    }}
+
 
 
 
